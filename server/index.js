@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors())
 
 
-mongoose.connect("mongodb+srv://crudmern:crudmern@crud.dv4zu.mongodb.net/demo?retryWrites=true&w=majority",{useNewUrlParser:true})
+mongoose.connect("Paste the url from mongo db atlas / database",{useNewUrlParser:true})
 const conn=mongoose.connection
 conn.on("on",()=>{
     console.log("Connected../../../../../")
